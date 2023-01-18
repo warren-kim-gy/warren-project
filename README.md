@@ -1,10 +1,5 @@
-# warren-project
-테스트 입니다. 가나다라마바사
-https://gykim.co.kr
-- 테스트 해보기
-- 이것은 무엇인가
+# Kaggle Project
+케글은 데이터 분석 및 머신러닝(ML) 경진대회 커뮤니티 입니다.
 
-
-# Readme test 입니다
-## 테스트
-### 테스트
+초심자에게 널리 알려져 있는 Tatanic Machine Learning 프로젝트를 포함해, 많은 경진대회가 열립니다.
+- Warren's Project 에는 Kaggle 경진대회와 관련된 내용을 공유합니다.
