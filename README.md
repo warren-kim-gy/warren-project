@@ -9,3 +9,6 @@ Kaggle 공부는 훌륭한 실력을 가진 유저들의 커널을 필사하며 
 
 사용되는 프로그래밍 언어
 - Python
+
+----
+- 참고 & 커널 필사 블로그 : https://subinium.github.io/kaggle-tutorial/
