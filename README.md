@@ -1,6 +1,5 @@
-# Kaggle Project
-케글은 데이터 분석 및 머신러닝(ML) 경진대회 커뮤니티 입니다.
-- https://www.kaggle.com/
+## Kaggle Project
+[케글](https://www.kaggle.com/)은 데이터 분석 및 머신러닝(ML) 경진대회 커뮤니티 입니다.
 
 초심자에게 널리 알려져 있는 Tatanic Machine Learning 프로젝트를 포함해, 많은 경진대회가 열립니다.
 Warren's Project 에는 Kaggle 경진대회와 관련된 내용을 공유합니다.
@@ -10,5 +9,12 @@ Kaggle 공부는 훌륭한 실력을 가진 유저들의 커널을 필사하며 
 사용되는 프로그래밍 언어
 - Python
 
+참고 & 커널 필사 블로그
+- 출처 : https://subinium.github.io/kaggle-tutorial/
+
 ----
-- 참고 & 커널 필사 블로그 : https://subinium.github.io/kaggle-tutorial/
+## SQL
+빅쿼리 및 MYSQL 프로젝트 및 Looker Studio에 관한 내용을 공유합니다.
+Google Analytics로 부터 빅쿼리에 쌓이는 데이터를 Looker studio로 시각화 합니다.
+
+Github 뿐만 아니라 [Warren의 기술 블로그](https://warrenkim.io)에서도 확인하실 수 있습니다.
