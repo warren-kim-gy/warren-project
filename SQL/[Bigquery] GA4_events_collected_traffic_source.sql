@@ -9,7 +9,7 @@ SELECT
   COUNTIF(event_name = "click_apply") as click_apply_cnt,
   SUM((SELECT value.int_value FROM unnest(event_params) WHERE KEY = 'engagement_time_msec'))/1000 AS engagement_time_seconds
 FROM
-  `loki-prod-35e1e.analytics_*********.events_*`
+  `****-prod-*****.analytics_*********.events_*`
 WHERE
   _TABLE_SUFFIX BETWEEN '20240129'  AND '20240129'
   AND geo.country LIKE '%United States%'
