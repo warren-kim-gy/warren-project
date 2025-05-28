@@ -1,24 +1,23 @@
--- ga4 회원가입(signup_complete)이벤트 기준 리텐션 쿼리
-
 WITH tmp_table_01 AS (
   SELECT
     SAFE_CAST(user_id AS INT64) AS user_id,
     DATE(TIMESTAMP_MICROS(event_timestamp), "Asia/Seoul") AS cohort_date
   FROM `warren_sample_project.analytics_000000000.events_*`
   WHERE _TABLE_SUFFIX BETWEEN '20250201' AND '20250228'
-    AND event_name = 'signup_complete'
+    AND event_name = 'signup_complete' -- 가입 기준
     AND user_id IS NOT NULL
-    AND geo.country NOT IN ('South Korea', 'Philippines')
-), -- cohort_users
+    AND geo.country = 'Japan'
+), -- 유저 정보
 tmp_table_02 AS (
   SELECT
     SAFE_CAST(user_id AS INT64) AS user_id,
     DATE(TIMESTAMP_MICROS(event_timestamp), "Asia/Seoul") AS event_date
   FROM `warren_sample_project.analytics_000000000.events_*`
   WHERE _TABLE_SUFFIX BETWEEN '20250201' AND '20250331'
+    AND event_name = 'enter_foreground'  -- 방문 기준
     AND user_id IS NOT NULL
-    AND geo.country NOT IN ('South Korea', 'Philippines')
-), -- event_logs
+    AND geo.country = 'Japan'
+), -- 방문 정보
 tmp_final_table AS (
   SELECT
     t1.user_id,
@@ -27,7 +26,7 @@ tmp_final_table AS (
   FROM tmp_table_01 t1
   LEFT JOIN tmp_table_02 t2
     ON t1.user_id = t2.user_id
-) -- joined
+)
 SELECT
   cohort_date,
   user_id,
